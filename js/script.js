@@ -41,4 +41,4 @@ function fill_data(str) {
 }
 
 document.querySelector('form').addEventListener('submit', fill_data);
-const interval = window.setInterval(get_data, 2000);
+const interval = window.setInterval(get_data, 3500);
