@@ -1,25 +1,52 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
-
-$font: 'Lato', sans-serif;
-
-$primary: #79C7C5;
-$secondary: #A1E2D9;
-$white: #F9FBFF;
-$dark: #777777;
-
-.chat_box {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 5px;
-    color: $secondary;
-    font-size: 0.7em;
-    padding: 10px 10px 10px 12px;
-    border-radius: 20px;
-  }
-
-@keyframes bounce {
-  30% { transform: translateY(-2px); }
-  60% { transform: translateY(0px); }
-  80% { transform: translateY(2px); }
-  100% { transform: translateY(0px); opacity: 0.5;  }
-}
+/* source : https://www.tutorialspoint.com/online_css_editor.php */
+   body {
+      margin: 0 auto;
+      max-width: 800px;
+      padding: 0 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   .chat_box {
+      font-size: 18px;
+      font-weight:500;
+      border: 2px solid #dedede;
+      background-color: #55e4a8;
+      color:rgb(0, 0, 0);
+      border-radius: 12px;
+      padding: 10px;
+      margin: 10px 0;
+   }
+   .darker {
+      border-color: #ccc;
+      background-color: rgb(111, 25, 182);
+      color:white;
+   }
+   .chat_box::after {
+      content: "";
+      clear: both;
+      display: table;
+   }
+   .profilePic{
+      width: 100%;
+   }
+   .message img {
+      float: left;
+      max-width: 60px;
+      width: 100%;
+      margin-right: 20px;
+      border-radius: 50%;
+   }
+   .message img.right {
+      float: right;
+      margin-left: 20px;
+      margin-right:0;
+   }
+   .timeStampRight {
+      float: right;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+   }
+   .timeStampLeft {
+      float: left;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+   }
