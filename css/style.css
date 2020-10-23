@@ -18,7 +18,7 @@ body {
   font-family: $font;
 }
 
-.container {
+/* .container {
   position: relative;
   margin: 12% auto;
   width: 620px;
@@ -35,10 +35,10 @@ body {
   left: 5%;
   border-radius: 10px 0 0 10px;
   box-shadow: -5px 5px 10px rgba($dark, .5);
-}
+} */
 
 /*chat messages */
-.people {
+/* .people {
   position: absolute;
   list-style-type: none;
   width: 30.2%;
@@ -64,7 +64,7 @@ body {
     margin-left: 14px;
     font-size: 0.5em;
   }
-}
+} */
 
 .person {
   padding: 12px 0 12px 12px;
