@@ -40,5 +40,9 @@ function fill_data(str) {
     xmlhttp.send("author=" + auteur + '&message=' + message);
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    get_data();
+  });
+  
 document.querySelector('form').addEventListener('submit', fill_data);
 const interval = window.setInterval(get_data, 3500);
