@@ -43,6 +43,8 @@ function fill_data(str) {
     xmlhttp.send("author=" + auteur + '&message=' + message);
 }
 
+
+
 // chargement du chat en appelant la fonction get_data() dès le chargement de la page 
 // en utilisant un event listener
 document.addEventListener("DOMContentLoaded", function() {
@@ -51,6 +53,8 @@ document.addEventListener("DOMContentLoaded", function() {
   
 // ajout d'un event listener pour executer la fonction fill data dès une action submit sur notre fomulaire
 document.querySelector('form').addEventListener('submit', fill_data);
+
+
 
 // boucler l'appel à la fonction qui récupere les données chat avec la méthode setInterval
 const interval = window.setInterval(get_data, 3500);

@@ -44,7 +44,7 @@ function login_check(){
     session_start();
     $_SESSION['pseudo'] = $_POST['username'];
     echo 'Vous êtes connecté !';
-    header("location: index.html");}
+    header("location: main_chat.php");}
 else {
     echo 'wrongs IDS';
 }
@@ -54,19 +54,23 @@ else {
 ?>
 
 
-<form action ="<?php 
-// session_start();
-login_check()
- ?>"  method ="POST">
-<input type ="text" name="username" value="username" >
-<input type ="password" name="password" value ="password" >
-<input type ="submit" value="LOGIN">
+    <div class=header>
+        <form action ="<?php 
+    // session_start();
+    login_check()
+    ?>"  method ="POST">
+    <input type ="text" name="username" value="username" >
+    <input type ="password" name="password" value ="password" >
+    <input type ="submit" value="LOGIN">
 
 
 
-</form>
-<div id="center_button">
-    <button onclick="location.href='inscription.php'">NEW USER</button>
+    </form>
+    <div id="center_button">
+        <button onclick="location.href='inscription.php'">NEW USER</button>
+    </div>
+
+
 
 
 </body>
