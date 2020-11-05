@@ -15,14 +15,15 @@ session_start();
 if (!isset($_SESSION['pseudo'])){
     header("location: connexion.php");
     
-}}
+}
+}
 
 on_load();
 ?>
 
 
     <div class=header>
-        <div id="pseudo"></div>
+        <div id="pseudo"> <?php echo($_SESSION['pseudo']); ?></div>
 
         <form action="deconnexion.php" method="post">
     <input type="submit" name="deco" value="Se deconnecter" />
