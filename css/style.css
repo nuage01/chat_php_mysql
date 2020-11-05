@@ -64,6 +64,7 @@
 
    .header{
       width:100%;
-      color: lightgreen;
+      color: red;
+      background-color: lime;
       height: 20%;
    }

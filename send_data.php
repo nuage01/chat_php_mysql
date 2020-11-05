@@ -14,12 +14,13 @@ function fill_data(){
     // $auteur = $_POST['author'];
     $auteur = $_SESSION['pseudo'];
     $message = $_POST['message'];
+    if $message != ''{
     $sql = $base ->prepare("INSERT INTO chat (author, chat) VALUES (?,?)");
     $sql->execute(
         array($auteur,$message));
-    }
+    }}
 else{
-  echo('NO POST DATA');
+  echo('NO MESSAGE SENT');
 }
 }
 

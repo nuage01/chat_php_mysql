@@ -8,6 +8,18 @@
 
 <body>
 
+<?php
+
+function on_load(){
+session_start();
+if !(isset($_SESSION['pseudo'])){
+    header("location: connexion.php");
+    
+}}
+
+on_load();
+?>
+
 
     <div class=header>
         <div id="pseudo"></div>
