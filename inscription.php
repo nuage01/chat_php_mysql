@@ -23,6 +23,7 @@ function inscription(){
   $sql->execute(
       array($_POST['username'], $hashed_password,$_POST['date'], $_POST['pays']));
     }}
+    header("location: connexion.php");
 ?>
 
 

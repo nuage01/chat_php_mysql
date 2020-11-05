@@ -27,7 +27,7 @@ function login_check(){
    }
 
   $reponse->closeCursor();
-  session_start();
+  
   if(isset($_POST['username']) && isset($_POST['password'])){
     
     // if (in_array($_POST['username'], $database_users ))
@@ -41,10 +41,13 @@ function login_check(){
     }
   if ($exists == True)
   {     
+    session_start();
     $_SESSION['pseudo'] = $_POST['username'];
     echo 'Vous êtes connecté !';
     header("location: index.html");}
-else {}
+else {
+    echo 'wrongs IDS';
+}
   }
 
 }
