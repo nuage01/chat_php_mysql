@@ -14,7 +14,8 @@ function fill_data(){
     // $auteur = $_POST['author'];
     $auteur = $_SESSION['pseudo'];
     $message = $_POST['message'];
-    if $message != ''{
+    $empty = '';
+    if ($message != $empty){
     $sql = $base ->prepare("INSERT INTO chat (author, chat) VALUES (?,?)");
     $sql->execute(
         array($auteur,$message));
