@@ -11,26 +11,11 @@
 
     <div class=header>
         <div id="pseudo"></div>
-            <?php
-            
-            if(isset($_POST['button1'])) { 
-                session_start();
 
-                // Suppression des variables de session et de la session
-                $_SESSION = array();
-                session_destroy();
-                
-                // Suppression des cookies de connexion automatique
-                setcookie('login', '');
-                setcookie('pass_hache', '');
-                header("location: connexion.php");
-            } 
-        ?> 
+        <form action="deconnexion.php" method="post">
+    <input type="submit" name="deco" value="Se deconnecter" />
+</form>
       
-        <form method="post"> 
-            <input id="deco" type="submit" name="button1"
-                    value="Se deconnecter"/> 
-        </form> 
     </div>
 
     <div>
