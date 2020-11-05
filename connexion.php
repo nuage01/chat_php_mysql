@@ -46,7 +46,6 @@ function login_check(){
     echo 'Vous êtes connecté !';
     header("location: main_chat.php");}
 else {
-    echo 'wrongs IDS';
 }
   }
 
