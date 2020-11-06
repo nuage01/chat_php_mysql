@@ -31,7 +31,7 @@ on_load();
       
     </div>
 
-    <div id=container>
+    <div id=conainter>
 
         <div id="chat_box" class="chat_box">
 

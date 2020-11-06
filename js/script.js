@@ -29,7 +29,7 @@ function fill_data(str) {
 
     event.preventDefault();
     var xmlhttp = new XMLHttpRequest();
-    auteur = document.getElementById("author").value;
+    // auteur = document.getElementById("author").value;
     message = document.getElementById("msg").value;
     contenu = message;
     xmlhttp.open("POST", "send_data.php", true);
@@ -40,7 +40,7 @@ function fill_data(str) {
         get_data();
     }
 
-    xmlhttp.send("author=" + auteur + '&message=' + message);
+    xmlhttp.send('message=' + message);
 }
 
 
