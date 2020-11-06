@@ -44,13 +44,11 @@ function fill_data(str) {
 }
 
 
-// function deconnexion()
-// {
-//     var xmlhttp = new XMLHttpRequest();
-//     xmlhttp.open("POST", "send_data.php", true);
-//     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-//     xmlhttp.send();
-// }
+function emoji()
+{
+    document.getElementById('msg').innerHTML = 👍;
+
+}
 
 
 
