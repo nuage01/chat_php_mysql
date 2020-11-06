@@ -26,7 +26,7 @@ on_load();
         <div id="pseudo"> <?php echo($_SESSION['pseudo']); ?></div>
 
         <form action="deconnexion.php" method="post">
-    <input type="submit" name="deco" value="Se deconnecter" />
+    <input type="submit" class="headers_button" name="deco" value="Se deconnecter" />
 </form>
       
     </div>

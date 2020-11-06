@@ -3,7 +3,7 @@
       margin: 0 auto;
       /* max-width: 800px; */
       max-width: 100%;
-      padding: 0 20px;
+      /* padding: 0 20px; */
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    }
 
@@ -16,6 +16,7 @@
    #chat_box{
       margin-left: auto;
       margin-right: auto ;
+      width:1005px;
    }
    .chat_box {
       align-self:  center;
@@ -66,7 +67,7 @@
       font-weight: bold;
    }
 
-   #deco {
+   #deco, .headers_button {
       background-color: #4CAF50; /* Green */
       border: none;
       color: white;
@@ -78,8 +79,11 @@
     }
 
    .header{
+      display: flex;
+      flex-direction:  row;
+      justify-content: space-between;
       width:100%;
-      background-color: greenyellow;
+      background-color: green;
       height: 10%;
    }
 

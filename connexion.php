@@ -66,7 +66,7 @@ else {
 
     </form>
     <div id="center_button">
-        <button onclick="location.href='inscription.php'">NEW USER</button>
+        <button class="headers_button" onclick="location.href='inscription.php'">NEW USER</button>
     </div>
 
 
