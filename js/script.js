@@ -44,20 +44,23 @@ function fill_data(str) {
 }
 
 
-function emoji()
-{  document.getElementById("msg").addEventListener("click", function() {
-    // document.getElementById('msg').innerHTML = document.getElementById("emoji").innerHTML;
-    document.getElementById('msg').innerHTML = "pousse";
-}}
+function emoji() {
+    document.getElementById("msg").addEventListener("click", function () {
+        // document.getElementById('msg').innerHTML = document.getElementById("emoji").innerHTML;
+        document.getElementById('msg').innerHTML = "pousse";
+
+});
+}
+
 
 
 
 // chargement du chat en appelant la fonction get_data() dès le chargement de la page 
 // en utilisant un event listener
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     get_data();
-  });
-  
+});
+
 // ajout d'un event listener pour executer la fonction fill data dès une action submit sur notre fomulaire
 // document.querySelector('form').addEventListener('submit', fill_data);
 document.getElementById('form').addEventListener('submit', fill_data);
