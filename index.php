@@ -41,8 +41,6 @@ function login_check(){
   
   if(isset($_POST['username']) && isset($_POST['password'])){
     
-    // if (in_array($_POST['username'], $database_users ))
-    // if (array_key_exists('amjad', $database_users ))
     $exists = False;
     foreach ($database_users as $key => $value )
     {
