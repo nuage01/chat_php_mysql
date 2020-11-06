@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css" />
-    <title>ellyes's chat</title>
+    <title>connexion</title>
 </head>
 
 <body>
@@ -71,6 +71,7 @@ else {
     </div>
 
     </div>
+
     <div class="bg-image"></div>
 
 <div class="bg-text">

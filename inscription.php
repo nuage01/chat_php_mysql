@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>inscription</title>
 </head>
+
 <body>
 
 <?php
@@ -25,7 +29,7 @@ function inscription(){
     }}
     
 ?>
-
+<div class=header> 
 
 <form action ="<?php 
 // session_start();
@@ -40,6 +44,13 @@ inscription()
 
 </form>
 
+</div>
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <h1>Welcome</h1>
+  <p>To my chat</p>
+</div> 
 
 </body>
 </html>
