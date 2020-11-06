@@ -39,7 +39,7 @@ inscription()
 <input type ="password" name="password" value ="password" >
 <input type ="date" name="date" value ="date" >
 <input type ="pays" name="pays" value ="pays" >
-<input type ="submit" value="register">
+<input class="headers_button" type ="submit" value="register">
 
 
 </form>
