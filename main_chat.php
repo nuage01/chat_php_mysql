@@ -31,7 +31,7 @@ on_load();
       
     </div>
 
-    <div>
+    <div id=container>
 
         <div id="chat_box" class="chat_box">
 
@@ -40,7 +40,6 @@ on_load();
         <p><b>écrire un message ici:</b></p>
         <form id="form" method="POST">
             <label for="fname">messages</label>
-            <input type="text" id="author" name="author">
             <input type="text" id="msg" name="msg">
             <button type="submit"> SEND</button>
         </form>
