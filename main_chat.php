@@ -44,7 +44,7 @@ on_load();
             
             <button class="headers_button" type="submit"> Envoyer</button>
         </form>
-        <button id="emoji" onclick=emoji()>👍</button>
+        <button id="emoji" onclick="emoji()">👍</button>
         </div>
     </div>
 

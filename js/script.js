@@ -46,7 +46,7 @@ function fill_data(str) {
 
 function emoji()
 {
-    document.getElementById('msg').innerHTML = document.getElementById(emoji).innerHTML;
+    document.getElementById('msg').innerHTML = document.getElementById("emoji").innerHTML;
 
 }
 
