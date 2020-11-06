@@ -90,7 +90,7 @@
     width: 15%;
     display: flex;
     align-self: flex-end;
-    background: blueviolet;
+    background: rgb(207, 228, 25));
     font-family: sans-serif;
     align-content: start;
     align-self: flex-end;
@@ -116,7 +116,7 @@
       font-weight:500;
       height:250px;
       border: 2px solid #dedede;
-      background-color: #8aeb0b;
+      background-color: #02c412;
       color:rgb(0, 0, 0);
       border-radius: 12px;
       padding: 10px;
