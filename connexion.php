@@ -52,7 +52,8 @@ else {
 }
 ?>
 
-
+    <div class="bg-image"></div>
+    
     <div class=header>
         <form action ="<?php 
     login_check()

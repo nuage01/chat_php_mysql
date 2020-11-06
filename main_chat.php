@@ -41,6 +41,7 @@ on_load();
         <form id="form" method="POST">
             <label for="fname">message</label>
             <input type="text" id="msg" name="msg">
+            <p>😀.😁.😂.🤣.😃.😄.😅.😆.😉.😊.😋.😎.😍.😘.😗.😙.😚.🙂.🤗.🤩.🤔.🤨.😛.😜.😝</p>
             <button class="headers_button" type="submit"> Envoyer</button>
         </form>
         </div>
