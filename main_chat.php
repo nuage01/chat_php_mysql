@@ -16,6 +16,8 @@ if (!isset($_SESSION['pseudo'])){
     header("location: index.php");
     
 }
+$_COOKIE['time']  = time();
+setcookie('time', $_COOKIE['time'] ,time()+7*24*60*60,null,null,false,true);
 }
 
 on_load();
