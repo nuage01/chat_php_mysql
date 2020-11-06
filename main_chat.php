@@ -23,7 +23,7 @@ on_load();
 
 
     <div class=header>
-        <div id="pseudo"> <?php echo($_SESSION['pseudo']); ?></div>
+        <div id="pseudo"> <p> <?php echo( "Connecté en tant que" + $_SESSION['pseudo']); ?></p></div>
 
         <form action="deconnexion.php" method="post">
     <input type="submit" class="headers_button" name="deco" value="Se deconnecter" />

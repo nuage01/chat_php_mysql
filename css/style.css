@@ -16,12 +16,10 @@
    #chat_box{
       margin-left: auto;
       margin-right: auto ;
-      width:1005px;
+      width:80%;
    }
    .chat_box {
       align-self:  center;
-      /* max-width: 800px; */
-      width:1000px;
       font-size: 18px;
       font-weight:500;
       border: 2px solid #dedede;
@@ -87,38 +85,41 @@
       height: 50px;
    }
 
-   .pseudo{
-      color:black;
-      border: whitesmoke;
-      padding: 2px;
-      text-align: center;
-      size: 30px;
-      border: black;
-      margin: 2vh;
-      font-size: .8vw;
-      font-family: OpenSans, sans-serif, arial;
-      text-transform: uppercase;
-      list-style-type: none;
-      text-decoration: none;
+   #pseudo {
+      height: 100%;
+    width: 15%;
+    display: flex;
+    align-self: flex-end;
+    background: blueviolet;
+    font-family: sans-serif;
+    align-content: start;
+    align-self: flex-end;
    }
-
+   
+   #pseudo > p{
+         font-family: monospace;
+         font-size: 1.1vw;
+         text-transform: uppercase;
+         color: white;
+         margin-left: 15%;
+         margin-right: 5%;
+         font-weight: bold;
+         align-self: flex-end;
+     }
 
    #messagebox
    {
       margin-left: auto;
       margin-right: auto ;
-      width:1005px;
-      /* max-width: 800px; */
-      /* width:40%; */
+      width:60%;
       font-size: 18px;
       font-weight:500;
       height:250px;
       border: 2px solid #dedede;
-      background-color: #55e4a8;l
+      background-color: #8aeb0b;
       color:rgb(0, 0, 0);
       border-radius: 12px;
       padding: 10px;
-      margin: 10px 0;
    }
 
 
