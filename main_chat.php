@@ -48,7 +48,9 @@ on_load();
         </div>
     </div>
 
-    <div> <p>Tu t'appelles <?php echo $_COOKIE['pseudo']; ?> </p></div>
+    <div> <p> salut <?php echo $_COOKIE['login']; ?>  ta derniere connexion été à
+    <?php echo $_COOKIE['time']; ?>
+</p></div>
 
     <script src="js/script.js"></script>
 </body>
