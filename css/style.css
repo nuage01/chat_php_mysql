@@ -96,13 +96,13 @@
 
    #messagebox
    {
-      align-self:  center;
+      /* align-self:  center; */
+      margin-left: auto;
+      margin-right: auto ;
       /* max-width: 800px; */
       width:40%;
       font-size: 18px;
       font-weight:500;
-      margin-left: auto;
-      margin-right: auto ;
       height:250px;
       border: 2px solid #dedede;
       background-color: #55e4a8;
