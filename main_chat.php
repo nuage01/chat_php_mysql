@@ -48,6 +48,8 @@ on_load();
         </div>
     </div>
 
+    <div> <p>Tu t'appelles <?php echo $_COOKIE['pseudo']; ?> </p></div>
+
     <script src="js/script.js"></script>
 </body>
 
