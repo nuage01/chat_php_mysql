@@ -26,6 +26,9 @@ function inscription(){
   $hashed_password = password_hash($password, PASSWORD_DEFAULT);
   $sql->execute(
       array($_POST['username'], $hashed_password,$_POST['date'], $_POST['pays']));
+    
+      session_start();
+      header("location: index.php");
     }}
     
 ?>
