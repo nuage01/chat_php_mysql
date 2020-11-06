@@ -17,6 +17,9 @@ function login_check(){
   if (isset($_COOKIE['login']))
   {
     $_SESSION['pseudo'] = $_COOKIE['login'];
+    setcookie('login', '');
+    $_COOKIE['time'] = date('m/d/Y h:i:s a', time());
+    setcookie('time', $_COOKIE['time'] ,time()+7*24*60*60,null,null,false,true);
     header("location: main_chat.php");
 
   }
@@ -53,7 +56,7 @@ function login_check(){
     $_SESSION['pseudo'] = $_POST['username'];
     
     setcookie('login', $_SESSION['pseudo'] ,time()+7*24*60*60,null,null,false,true);
-  
+    
     echo 'Vous êtes connecté !';
     header("location: main_chat.php");}
 else {
