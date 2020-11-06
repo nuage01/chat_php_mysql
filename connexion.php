@@ -52,9 +52,15 @@ else {
 }
 ?>
 
+
+
+    <div class=header> </div>
     <div class="bg-image"></div>
-    
-    <div class=header>
+
+<div class="bg-text">
+  <h1>Welcome</h1>
+  <p>To my chat</p>
+</div> 
         <form action ="<?php 
     login_check()
     ?>"  method ="POST">
