@@ -47,6 +47,7 @@ on_load();
         <button id="emoji" onclick="emoji()">👍</button>
         </div>
     </div>
+    <div class="bg-image"></div>
 
     <script src="js/script.js"></script>
 </body>

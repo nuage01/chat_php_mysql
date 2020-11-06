@@ -16,9 +16,6 @@
       /* The image used */
       background-image: url("wall.jpeg");
     
-      /* Add the blur effect */
-      filter: blur(4px);
-      -webkit-filter: blur(4px);
 
       height: 1000px;
     
