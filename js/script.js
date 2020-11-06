@@ -45,10 +45,10 @@ function fill_data(str) {
 
 
 function emoji()
-{
+{  document.getElementById("msg").addEventListener("click", function() {
     // document.getElementById('msg').innerHTML = document.getElementById("emoji").innerHTML;
     document.getElementById('msg').innerHTML = "pousse";
-}
+}}
 
 
 
