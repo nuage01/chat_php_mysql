@@ -12,6 +12,11 @@
       flex-direction: column;
       align-items: center;
    }
+
+   #chat_box{
+      margin-left: auto;
+      margin-right: auto ;
+   }
    .chat_box {
       align-self:  center;
       /* max-width: 800px; */
