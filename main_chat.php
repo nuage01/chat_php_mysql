@@ -41,9 +41,10 @@ on_load();
         <form id="form" method="POST">
             <label for="fname">message</label>
             <input type="text" id="msg" name="msg">
-            <button class="emoji" onclick=emoji()>👍</p>
+            
             <button class="headers_button" type="submit"> Envoyer</button>
         </form>
+        <button id="emoji" onclick=emoji()>👍</button>
         </div>
     </div>
 
