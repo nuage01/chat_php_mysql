@@ -14,7 +14,7 @@
     
     .bg-image {
       /* The image used */
-      background-image: url("wall.jpg");
+      background-image: url("wall.jpeg");
     
       /* Add the blur effect */
       filter: blur(4px);
