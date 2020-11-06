@@ -5,6 +5,7 @@
       max-width: 100%;
       /* padding: 0 20px; */
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
    }
 
    /* background css source: https://www.w3schools.com/howto/howto_css_blurred_background.asp */
@@ -23,6 +24,7 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      opacity:0.8;
     }
     
     /* Position text in the middle of the page/image */
@@ -52,6 +54,7 @@
       margin-left: auto;
       margin-right: auto ;
       width:80%;
+      
    }
    .chat_box {
       align-self:  center;
