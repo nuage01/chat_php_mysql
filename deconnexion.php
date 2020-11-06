@@ -24,7 +24,7 @@
                 // Suppression des cookies de connexion automatique
                 setcookie('login', '');
                 setcookie('pass_hache', '');
-                header("location: connexion.php");
+                header("location: index.php");
              }
         ?> 
 

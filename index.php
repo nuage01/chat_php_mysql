@@ -13,6 +13,14 @@
 
 
 function login_check(){
+  session_start();
+  if $_COOKIE['login']
+  {
+    $_SESSION['pseudo'] = $_COOKIE['login']
+    header("location: main_chat.php");
+
+  }
+
   try{
     $base = new PDO('mysql:host=172.28.100.76;dbname=storage','lyes_remote','frik33dz');
   } catch (Exception $e){
@@ -43,6 +51,7 @@ function login_check(){
   {     
     session_start();
     $_SESSION['pseudo'] = $_POST['username'];
+    setcookie('login', $_SESSION['pseudo'] ,time()+7*24*60*60,null,null,false,true);
     echo 'Vous êtes connecté !';
     header("location: main_chat.php");}
 else {
