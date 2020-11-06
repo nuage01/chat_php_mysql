@@ -16,7 +16,7 @@ function login_check(){
   session_start();
   if (isset($_COOKIE['login']))
   {
-    $_SESSION['pseudo'] = $_COOKIE['login']
+    $_SESSION['pseudo'] = $_COOKIE['login'];
     header("location: main_chat.php");
 
   }
