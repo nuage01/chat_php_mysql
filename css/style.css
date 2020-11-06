@@ -7,6 +7,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    }
 
+   /* background css source: https://www.w3schools.com/howto/howto_css_blurred_background.asp */
    * {
       box-sizing: border-box;
     }
@@ -16,11 +17,10 @@
       background-image: url("wall.jpg");
     
       /* Add the blur effect */
-      filter: blur(8px);
-      -webkit-filter: blur(8px);
-    
-      /* Full height */
-      height: 100%;
+      filter: blur(4px);
+      -webkit-filter: blur(4px);
+
+      height: 1000px;
     
       /* Center and scale the image nicely */
       background-position: center;
