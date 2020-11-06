@@ -20,7 +20,7 @@
    .chat_box {
       align-self:  center;
       /* max-width: 800px; */
-      width:80%;
+      width:100%;
       font-size: 18px;
       font-weight:500;
       border: 2px solid #dedede;
@@ -86,9 +86,12 @@
    .pseudo{
       color:black;
       size: 30px;
+      border: black;
    }
 
    #msg{
-      height:150px;
-      width: 200px;
+      margin-left: auto;
+      margin-right: auto ;
+      height:250px;
+      width: 40%;
    }
