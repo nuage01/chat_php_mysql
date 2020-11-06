@@ -36,14 +36,14 @@ on_load();
         <div id="chat_box" class="chat_box">
 
         </div>
-
-        <p><b>écrire un message ici:</b></p>
+        <div id="messagebox">
+        <p><b>Tapez votre message içi:</b></p>
         <form id="form" method="POST">
-            <label for="fname">messages</label>
+            <label for="fname">message</label>
             <input type="text" id="msg" name="msg">
-            <button type="submit"> SEND</button>
+            <button class="headers_button" type="submit"> Envoyer</button>
         </form>
-
+        </div>
     </div>
 
     <script src="js/script.js"></script>

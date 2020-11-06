@@ -55,18 +55,17 @@ else {
 
     <div class=header>
         <form action ="<?php 
-    // session_start();
     login_check()
     ?>"  method ="POST">
     <input type ="text" name="username" value="username" >
     <input type ="password" name="password" value ="password" >
-    <input type ="submit" value="LOGIN">
+    <input class="headers_button" type ="submit" value="LOGIN">
 
 
 
     </form>
     <div id="center_button">
-        <button class="headers_button" onclick="location.href='inscription.php'">NEW USER</button>
+        <button class="headers_button" onclick="location.href='inscription.php'">Nouvel Utilisateur</button>
     </div>
 
 
