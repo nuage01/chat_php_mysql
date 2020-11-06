@@ -20,7 +20,7 @@
    .chat_box {
       align-self:  center;
       /* max-width: 800px; */
-      width:100%;
+      width:800px;
       font-size: 18px;
       font-weight:500;
       border: 2px solid #dedede;
