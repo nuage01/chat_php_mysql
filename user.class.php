@@ -1,13 +1,11 @@
 <?php
+include_once('DBConnexion.class.php');
 class User
 {
     public function setLogin($nouveau_login){
     $this->login = $nouveau_login;
     }
 
-    public function setLogin($nouveau_login){
-        $this->login = $nouveau_login;
-    }
 
     public function getLogin(){
         return $this->login;
@@ -15,7 +13,15 @@ class User
 
 
     public function display_infos(){
-        return $this ->login;
+        $base = DBConnexion::getInstance();
+        $reponse = $base->vars_query('SELECT * FROM  USERS where LOGIN = (?)', array($this->login));
+        return $response
     }
+
 }
+
+$user = User();
+$user->setLogin("lyes");
+$infos->display_infos();
+echo($infos);
 ?>

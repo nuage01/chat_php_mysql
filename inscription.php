@@ -16,15 +16,12 @@ function inscription(){
   $base = DBConnexion::getInstance();
   session_start();
   if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['date']) && isset($_POST['pays'])){
-  // $sql = $base ->prepare("INSERT INTO USERS (LOGIN, PASSWORD, BIRTH_DATE, PAYS) VALUES (?,?,?,?)");
   $query = "INSERT INTO USERS (LOGIN, PASSWORD, BIRTH_DATE, PAYS) VALUES (?,?,?,?)";
   $password=$_POST['password'];
   $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-  // $sql->execute(
-  //     array($_POST['username'], $hashed_password,$_POST['date'], $_POST['pays']));
   $sql = $base->vars_query($query,
           array($_POST['username'], $hashed_password,$_POST['date'], $_POST['pays']));
-      // session_start();
+
       header("location: index.php");
     }}
     
