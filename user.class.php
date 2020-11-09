@@ -15,9 +15,14 @@ class User
     public function display_infos(){
         $base = DBConnexion::getInstance();
         $current = $this->login;
-        echo($current);
         $reponse =  $base->query("SELECT PAYS FROM USERS where LOGIN='.$current.'");
         // -- = '.$current.'");
+        $sql="SELECT PAYS FROM USERS where LOGIN='.$current.'";
+        foreach  ($base->query($sql) as $row) {
+            print $row['name'] . "\t";
+            print  $row['color'] . "\t";
+            print $row['calories'] . "\n";
+        }
         return $reponse;
     }
 
