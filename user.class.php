@@ -38,6 +38,7 @@ class User
         }
         else{
             print('CATA');
+            print($result);
             $base = DBConnexion::getInstance(); 
             $password = "new1234#";
             $sql="UPDATE TABLE USERS SET password='$password'";
