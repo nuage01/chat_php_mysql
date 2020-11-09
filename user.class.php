@@ -15,13 +15,13 @@ class User
     public function display_infos(){
         $base = DBConnexion::getInstance();
         $current = $this->login;
-        $reponse =  $base->query("SELECT PAYS FROM USERS where LOGIN='.$current.'");
-        // -- = '.$current.'");
-        $sql="SELECT * FROM USERS WHERE LOGIN='$current'";
-        foreach  ($base->query($sql) as $row) {
-            print $row['PAYS'] . "\t";
+        $reponse =  $base->query("SELECT PAYS,BIRTH_DATE FROM USERS where LOGIN='$current'");
 
-        }
+        // $sql="SELECT * FROM USERS WHERE LOGIN='$current'";
+        // foreach  ($base->query($sql) as $row) {
+        //     print $row['PAYS'] . "\t";
+
+        // }
         return $reponse;
     }
 
