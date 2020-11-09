@@ -34,19 +34,15 @@ class User
         }
         if (!isset($result)){
             echo('username ou mail incorrect');
-            print($result);
         }
         else{
-            print('CATA');
-            print($result);
+
             $base = DBConnexion::getInstance(); 
             $password = "new1234#";
             $sql="UPDATE TABLE USERS SET password='$password'";
             $base = $base->query($sql);
             mail($result, 'nouveau password', $password);
         }
-        // return $result;
-
     }
 
 }
