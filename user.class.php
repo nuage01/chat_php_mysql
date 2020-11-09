@@ -15,6 +15,7 @@ class User
     public function display_infos(){
         $base = DBConnexion::getInstance();
         $reponse = $base->vars_query('SELECT * FROM  USERS where LOGIN = (?)', array($this->login));
+        $response = $base->query('SELECT * FROM  USERS');
         return $reponse;
     }
 
@@ -23,5 +24,7 @@ class User
 $user = new User();
 $user->setLogin("lyes");
 $infos = $user->display_infos();
-echo($infos['PAYS']);
+while($ligne = $infos->fetch()){
+echo($ligne);}
+
 ?>
