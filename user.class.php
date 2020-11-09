@@ -16,7 +16,7 @@ class User
         $base = DBConnexion::getInstance();
         $current = $this->login;
         echo($current);
-        $reponse =  $base->query("SELECT * FROM  USERS where LOGIN = lyes");
+        $reponse =  $base->query("SELECT PAYS FROM USERS where LOGIN=lyes");
         // -- = '.$current.'");
         return $reponse;
     }
