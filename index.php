@@ -24,14 +24,14 @@ function login_check(){
 
   }
 
-  // try{
-  //   $base = new PDO('mysql:host=172.28.100.76;dbname=storage','lyes_remote','frik33dz');
-  // } catch (Exception $e){
-  //   die('Erreur : ' . $e->getMessage());
-  // }
+  try{
+    $base = new PDO('mysql:host=172.28.100.76;dbname=storage','lyes_remote','frik33dz');
+  } catch (Exception $e){
+    die('Erreur : ' . $e->getMessage());
+  }
   
-  // $reponse = $base->query('SELECT * FROM  USERS');
-  $response = DBConnexion::get_instance()->query('SELECT * FROM  USERS');
+  $reponse = $base->query('SELECT * FROM  USERS');
+  // $response = DBConnexion::get_instance()->query('SELECT * FROM  USERS');
   $database_users = array();
   while($ligne = $reponse->fetch()){
   
