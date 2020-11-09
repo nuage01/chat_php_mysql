@@ -24,7 +24,7 @@ class DBConnexion {
 
     public function vars_query($requete, $vars){
 
-        $sql = $this->pdo->prepare($query);
+        $sql = $this->pdo->prepare($requete);
         return $sql->execute($vars);
         
     }
