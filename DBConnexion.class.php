@@ -21,6 +21,14 @@ class DBConnexion {
         return $this->pdo->query($requete);
         
     }
-  }
+
+    public function vars_query($requete, $vars){
+
+        $sql = $this->pdo->prepare($query);
+        return $sql->execute($vars);
+        
+    }
+
 }
+
 ?>
