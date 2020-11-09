@@ -22,6 +22,6 @@ class User
 
 $user = new User();
 $user->setLogin("lyes");
-$infos->display_infos();
+$infos = $user->display_infos();
 echo($infos);
 ?>
