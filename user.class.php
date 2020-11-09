@@ -30,7 +30,6 @@ class User
 $user = new User();
 $user->setLogin("lyes");
 $infos = $user->display_infos();
-while($ligne = $infos->fetch()){
-echo($ligne);}
+echo($ligne);
 
 ?>
