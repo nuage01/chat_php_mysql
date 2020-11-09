@@ -41,5 +41,7 @@ class DBConnexion {
   echo($instance);
   $reponse = $instance->query('SELECT * FROM  USERS');
   $database_users = array();
-  echo($reponse);
+  while($ligne = $reponse->fetch()){
+echo('1');  
+}
 ?>
