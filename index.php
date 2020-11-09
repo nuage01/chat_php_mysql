@@ -11,7 +11,6 @@
 
 <?php
 
-include_once('DBConnexion.class.php');
 function login_check(){
   session_start();
   if (isset($_COOKIE['login']))
@@ -31,7 +30,6 @@ function login_check(){
   }
   
   $reponse = $base->query('SELECT * FROM  USERS');
-  // $response = DBConnexion::get_instance()->query('SELECT * FROM  USERS');
   $database_users = array();
   while($ligne = $reponse->fetch()){
   
