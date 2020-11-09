@@ -10,7 +10,8 @@ class DBConnexion {
 
     ){
         try{
-            $pdo = new PDO($host, $bdd_user, $bdd_password);
+            // self::$pdo = new PDO($host, $bdd_user, $bdd_password);
+            self::$pdo = new PDO('mysql:host=172.28.100.76;dbname=storage','lyes_remote','frik33dz');
             } catch (Exception $e){
             die('Erreur : ' . $e->getMessage());
             }
