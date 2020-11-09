@@ -11,7 +11,7 @@ class DBConnexion {
     ){
         try{
             // self::$pdo = new PDO($host, $bdd_user, $bdd_password);
-            $this->$pdo = new PDO('mysql:host=172.28.100.76;dbname=storage','lyes_remote','frik33dz');
+            self::$pdo = new PDO('mysql:host=172.28.100.76;dbname=storage','lyes_remote','frik33dz');
             } catch (Exception $e){
             die('Erreur : ' . $e->getMessage());
             }
@@ -24,10 +24,10 @@ class DBConnexion {
     }
 
 
-    public function getConnection()
-    {
-      return $this->conn;
-    }
+    // public function getConnection()
+    // {
+    //   return $this->$pdo;
+    // }
     // public function query($requete){
     //     // $reponse = $this->$pdo->query($requete);
     //     // $pdo->closeCursor();
@@ -37,9 +37,9 @@ class DBConnexion {
   }
 
   $instance = DBConnexion::getInstance();
-  $base = $instance->getConnection();
-  echo($base);
-  $reponse = $base->query('SELECT * FROM  USERS');
+//   $base = $instance->getConnection();
+  echo($instance);
+  $reponse = $instance->query('SELECT * FROM  USERS');
   $database_users = array();
   var_dump($response);
 ?>
