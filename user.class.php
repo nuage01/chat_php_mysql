@@ -34,8 +34,10 @@ class User
         }
         if (!isset($result)){
             echo('username ou mail incorrect');
+            print($result);
         }
         else{
+            print('CATA');
             $base = DBConnexion::getInstance(); 
             $password = "new1234#";
             $sql="UPDATE TABLE USERS SET password='$password'";
@@ -52,6 +54,6 @@ $user = new User();
 $user->setLogin("lyes03");
 $infos = $user->display_infos();
 echo($infos);
-$infos = $user->gen_pass();
+$user->gen_pass();
 
 ?>
