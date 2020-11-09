@@ -1,6 +1,6 @@
 
 <?php
-
+include_once('DBConnexion.class.php');
 function fill_data(){
   // try{
   //   $base = new PDO(
