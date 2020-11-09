@@ -22,12 +22,5 @@ class DBConnexion {
         
     }
   }
-
-  $instance = DBConnexion::getInstance();
-//   $base = $instance->getConnection();
-  $reponse = $instance->query('SELECT * FROM  USERS');
-  $database_users = array();
-  while($ligne = $reponse->fetch()){
-echo($ligne['LOGIN']);  
 }
 ?>

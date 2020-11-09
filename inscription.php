@@ -11,14 +11,9 @@
 
 <?php
 
-
+include_once('DBConnexion.class.php');
 function inscription(){
-  try{
-    $base = new PDO('mysql:host=172.28.100.76;dbname=storage','lyes_remote','frik33dz');
-  } catch (Exception $e){
-    die('Erreur : ' . $e->getMessage());
-  }
-  
+  $base = DBConnexion::getInstance();
   session_start();
   if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['date']) && isset($_POST['pays'])){
   $sql = $base ->prepare("INSERT INTO USERS (LOGIN, PASSWORD, BIRTH_DATE, PAYS) VALUES (?,?,?,?)");
