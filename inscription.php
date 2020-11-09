@@ -23,7 +23,7 @@ function inscription(){
   // $sql->execute(
   //     array($_POST['username'], $hashed_password,$_POST['date'], $_POST['pays']));
   $sql = $base->vars_query($query,
-          array($_POST['username'], $hashed_password,$_POST['date'], $_POST['pays']))
+          array($_POST['username'], $hashed_password,$_POST['date'], $_POST['pays']));
       // session_start();
       header("location: index.php");
     }}
