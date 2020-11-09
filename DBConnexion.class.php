@@ -6,7 +6,7 @@ class DBConnexion {
     private function __construct(
          $host = 'mysql:host=172.28.100.76;dbname=storage',
          $bdd_user = 'lyes_remote',
-         $bdd_password = 'frik33dz',
+         $bdd_password = 'frik33dz'
 
     ){
         try{
