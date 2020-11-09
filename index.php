@@ -10,7 +10,7 @@
 <body>
 
 <?php
-
+include_once('DBConnexion.class.php');
 function login_check(){
   session_start();
   if (isset($_COOKIE['login']))
@@ -23,13 +23,9 @@ function login_check(){
 
   }
 
-  try{
-    $base = new PDO('mysql:host=172.28.100.76;dbname=storage','lyes_remote','frik33dz');
-  } catch (Exception $e){
-    die('Erreur : ' . $e->getMessage());
-  }
-  
+  $base = DBConnexion::getInstance();
   $reponse = $base->query('SELECT * FROM  USERS');
+
   $database_users = array();
   while($ligne = $reponse->fetch()){
   
