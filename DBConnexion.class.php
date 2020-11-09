@@ -38,10 +38,9 @@ class DBConnexion {
 
   $instance = DBConnexion::getInstance();
 //   $base = $instance->getConnection();
-  echo($instance);
   $reponse = $instance->query('SELECT * FROM  USERS');
   $database_users = array();
   while($ligne = $reponse->fetch()){
-echo('1');  
+echo($ligne);  
 }
 ?>
