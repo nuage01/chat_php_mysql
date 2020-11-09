@@ -14,7 +14,8 @@ class User
 
     public function display_infos(){
         $base = DBConnexion::getInstance();
-        $reponse =  mysqli_query($base,"SELECT * FROM  USERS where LOGIN = '.$this->login.'");
+        $current = $this->login;
+        $reponse =  mysqli_query($base, "SELECT * FROM  USERS where LOGIN = '.$current.'");
         return $reponse;
     }
 
