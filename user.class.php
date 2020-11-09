@@ -52,6 +52,6 @@ $user = new User();
 $user->setLogin("lyes03");
 $infos = $user->display_infos();
 echo($infos);
-$infos = $user.gen_pass();
+$infos = $user->gen_pass();
 
 ?>
