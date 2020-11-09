@@ -16,7 +16,7 @@ class User
         $base = DBConnexion::getInstance();
         $current = $this->login;
         // $reponse =  $base->query("SELECT * FROM USERS where LOGIN='$current'");
-        $result = ""
+        $result = "";
         $sql="SELECT * FROM USERS WHERE LOGIN='$current'";
         foreach  ($base->query($sql) as $row) {
             $result = $result . $row['PAYS'] . "\t";
