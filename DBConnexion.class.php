@@ -22,11 +22,11 @@ class DBConnexion {
       }
       return self::$instance;
     }
-    public function query($requete){
-        // $reponse = $this->$pdo->query($requete);
-        // $pdo->closeCursor();
-        return $this->$pdo->query($requete);
+    // public function query($requete){
+    //     // $reponse = $this->$pdo->query($requete);
+    //     // $pdo->closeCursor();
+    //     return $this->$pdo->query($requete);
         
-    }
+    // }
   }
 ?>
