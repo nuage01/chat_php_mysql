@@ -32,6 +32,7 @@ function login_check(){
   
 //   $reponse = $base->query('SELECT * FROM  USERS');
   $base = DBConnexion::get_instance();
+  echo($base);
   $reponse = $base->query('SELECT * FROM  USERS');
   $database_users = array();
   while($ligne = $reponse->fetch()){
