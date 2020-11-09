@@ -17,7 +17,7 @@ class User
         $current = $this->login;
         $reponse =  $base->query("SELECT PAYS FROM USERS where LOGIN='.$current.'");
         // -- = '.$current.'");
-        $sql="SELECT PAYS FROM USERS where LOGIN='.$current.'";
+        $sql="SELECT PAYS FROM USERS where LOGIN=lyes";
         foreach  ($base->query($sql) as $row) {
             print $row['name'] . "\t";
             print  $row['color'] . "\t";
