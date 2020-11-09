@@ -15,7 +15,7 @@ class User
     public function display_infos(){
         $base = DBConnexion::getInstance();
         $reponse = $base->vars_query('SELECT * FROM  USERS where LOGIN = (?)', array($this->login));
-        $response = $base->query('SELECT * FROM  USERS');
+        $reponse = $base->query('SELECT * FROM  USERS');
         return $reponse;
     }
 
