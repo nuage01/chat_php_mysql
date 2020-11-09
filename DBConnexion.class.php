@@ -28,12 +28,12 @@ class DBConnexion {
     // {
     //   return $this->$pdo;
     // }
-    // public function query($requete){
-    //     // $reponse = $this->$pdo->query($requete);
-    //     // $pdo->closeCursor();
-    //     return $this->$pdo->query($requete);
+    public function query($requete){
+        // $reponse = $this->$pdo->query($requete);
+        // $pdo->closeCursor();
+        return $this->pdo->query($requete);
         
-    // }
+    }
   }
 
   $instance = DBConnexion::getInstance();
