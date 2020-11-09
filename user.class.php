@@ -17,11 +17,10 @@ class User
         $current = $this->login;
         $reponse =  $base->query("SELECT PAYS FROM USERS where LOGIN='.$current.'");
         // -- = '.$current.'");
-        $sql="SELECT * FROM USERS";
+        $sql="SELECT * FROM USERS WHERE LOGIN=lyes";
         foreach  ($base->query($sql) as $row) {
-            print $row['name'] . "\t";
-            print  $row['color'] . "\t";
-            print $row['calories'] . "\n";
+            print $row['PAYS'] . "\t";
+
         }
         return $reponse;
     }
