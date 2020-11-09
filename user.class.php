@@ -20,7 +20,7 @@ class User
 
 }
 
-$user = User();
+$user = new User();
 $user->setLogin("lyes");
 $infos->display_infos();
 echo($infos);
