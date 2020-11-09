@@ -16,13 +16,15 @@ function inscription(){
   $base = DBConnexion::getInstance();
   session_start();
   if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['date']) && isset($_POST['pays'])){
-  $sql = $base ->prepare("INSERT INTO USERS (LOGIN, PASSWORD, BIRTH_DATE, PAYS) VALUES (?,?,?,?)");
+  // $sql = $base ->prepare("INSERT INTO USERS (LOGIN, PASSWORD, BIRTH_DATE, PAYS) VALUES (?,?,?,?)");
+  $query = "INSERT INTO USERS (LOGIN, PASSWORD, BIRTH_DATE, PAYS) VALUES (?,?,?,?)";
   $password=$_POST['password'];
   $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-  $sql->execute(
-      array($_POST['username'], $hashed_password,$_POST['date'], $_POST['pays']));
-    
-      session_start();
+  // $sql->execute(
+  //     array($_POST['username'], $hashed_password,$_POST['date'], $_POST['pays']));
+  $sql = $base->vars_query($query,
+          array($_POST['username'], $hashed_password,$_POST['date'], $_POST['pays']))
+      // session_start();
       header("location: index.php");
     }}
     
@@ -30,7 +32,7 @@ function inscription(){
 <div class=header> 
 
 <form action ="<?php 
-// session_start();
+
 inscription()
  ?>"  method ="POST">
 <input type ="text" name="username" value="username" >
@@ -38,8 +40,6 @@ inscription()
 <input type ="date" name="date" value ="date" >
 <input type ="pays" name="pays" value ="pays" >
 <input class="headers_button" type ="submit" value="register">
-
-
 </form>
 
 </div>
