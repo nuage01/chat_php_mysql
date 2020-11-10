@@ -51,7 +51,7 @@ class User
 }
 
 $user = new User();
-$user->setLogin("lyes03");
+$user->setLogin("lyes04");
 $infos = $user->display_infos();
 echo($infos);
 $user->gen_pass();
