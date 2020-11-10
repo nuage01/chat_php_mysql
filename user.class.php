@@ -36,12 +36,15 @@ class User
             echo('username ou mail incorrect');
         }
         else{
-
+            $headers = 'From: webmaster@example.com' . "\r\n" .
+            'Reply-To: webmaster@example.com' . "\r\n" .
+            'X-Mailer: PHP/' . phpversion();
             $base = DBConnexion::getInstance(); 
             $password = "new1234#";
+            mail($result, 'nouveau password', $password, $headers);
             $sql="UPDATE TABLE USERS SET password='$password'";
             $base = $base->query($sql);
-            mail($result, 'nouveau password', $password);
+            
         }
     }
 
