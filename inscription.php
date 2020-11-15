@@ -53,13 +53,14 @@ inscription()
 <label for="pass">Mot de passe</label>
 <input type ="password" name="password" value ="password" id="pass" >
 </div>
-<div>
-<label for="date"> Date de Naissance</label>
-<input type ="date" name="date" value ="date" id="date" >
-</div>
+
 <div>
 <label for="pays">Pays</label>
 <input type ="pays" name="pays" value ="pays" id="pays" >
+</div>
+<div>
+<label for="date"> Date de Naissance</label>
+<input type ="date" name="date" value ="date" id="date" >
 </div>
 <input class="headers_button" type ="submit" value="register">
 </form>
