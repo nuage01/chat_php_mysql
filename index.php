@@ -11,7 +11,11 @@
 
 <?php
 include_once('DBConnexion.class.php');
+
+// fonction qui va vérifir la connexion de l'utilisateur
 function login_check(){
+  // en utilisant les cookies de l'utilisateur on va lui permettre de se connecter
+  // directement au chat
   session_start();
   if (isset($_COOKIE['login']))
   {
@@ -23,7 +27,10 @@ function login_check(){
 
   }
 
+  // appel à l'object DBConnection qui est deja instancié une fois ou jamais
   $base = DBConnexion::getInstance();
+
+  // vérification du login et mot de passe sur la base de données
   $reponse = $base->query('SELECT * FROM  USERS');
 
   $database_users = array();
@@ -45,6 +52,7 @@ function login_check(){
     }
   if ($exists == True)
   {     
+    // Identifiants vérifiés
     session_start();
     $_SESSION['pseudo'] = $_POST['username'];
     

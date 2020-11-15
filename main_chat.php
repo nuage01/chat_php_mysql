@@ -10,12 +10,17 @@
 
 <?php
 
+//page appeleé au chargement de la page
 function on_load(){
 session_start();
+// retour à la page de login si l'utilisateur n'est pas connecté
+// cela permet d'empecher l'acces à la page de chat pour les personnes non connectées
 if (!isset($_SESSION['pseudo'])){
     header("location: index.php");
     
 }
+
+// création de cookies pour l'utilisateur si il est connecté
 $_COOKIE['login'] = $_SESSION['pseudo'];
 $_COOKIE['time'] = date('m/d/Y h:i:s a', time());
 setcookie('time', $_COOKIE['time'] ,time()+7*24*60*60,null,null,false,true);

@@ -10,6 +10,8 @@
 <body>
 
             <?php
+            // à l'appel de ce fichier par le boutton de déconnexion 
+            // on peut avoir la méthode à l'aide de la variable spéciale $_SERVER de PHP
             if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['deco']))
             {
                 deco();

@@ -15,10 +15,12 @@ include_once('DBConnexion.class.php');
 function inscription(){
   $base = DBConnexion::getInstance();
   session_start();
+  // tous les champs doivent etre renseignés
   if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['date']) && isset($_POST['pays'])){
   $query = "INSERT INTO USERS (LOGIN, email,PASSWORD, BIRTH_DATE, PAYS) VALUES (?,?,?,?,?)";
   $password=$_POST['password'];
   $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+  // utilisation de la méthode vars_query crée dans la class DBConnexion
   $sql = $base->vars_query($query,
           array($_POST['username'], $_POST['email'], $hashed_password,$_POST['date'], $_POST['pays']));
 

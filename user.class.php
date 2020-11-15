@@ -11,7 +11,8 @@ class User
         return $this->login;
     }
 
-
+    // méthode d'instance qui va permettre 
+    // à un objet utilisateur de disposer de ses infos
     public function display_infos(){
         $base = DBConnexion::getInstance();
         $current = $this->login;
@@ -23,7 +24,7 @@ class User
         return $result;
     }
 
-
+    // TO DO: Fonction de géneration de MDP en cas d'oubli
     public function gen_pass(){
         $base = DBConnexion::getInstance();
         $current = $this->login;
@@ -50,10 +51,10 @@ class User
 
 }
 
-$user = new User();
-$user->setLogin("lyes04");
-$infos = $user->display_infos();
-echo($infos);
-$user->gen_pass();
+// $user = new User();
+// $user->setLogin("lyes04");
+// $infos = $user->display_infos();
+// echo($infos);
+// $user->gen_pass();
 
 ?>
