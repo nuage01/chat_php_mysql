@@ -30,6 +30,15 @@ function inscription(){
 ?>
 <div class=header> 
 
+
+
+</div>
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <h1>Welcome</h1>
+  <p>To my chat</p>
+</div> 
 <form action ="<?php 
 
 inscription()
@@ -41,14 +50,6 @@ inscription()
 <input type ="pays" name="pays" value ="pays" >
 <input class="headers_button" type ="submit" value="register">
 </form>
-
-</div>
-<div class="bg-image"></div>
-
-<div class="bg-text">
-  <h1>Welcome</h1>
-  <p>To my chat</p>
-</div> 
 
 </body>
 </html>
