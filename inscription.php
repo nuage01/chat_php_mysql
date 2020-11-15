@@ -40,15 +40,17 @@ function inscription(){
 
 inscription()
  ?>"  method ="POST">
+
+
 <label for="usrname">Pseudo</label>
-<label for="mail"> E-mail</label>
-<label for="pass">Mot de passe</label>
-<label for="date"> Date de Naissance</label>
-<label for="pays">Pays</label>
 <input type ="text" name="username" value="username" id="usrname" >
+<label for="mail"> E-mail</label>
 <input type ="text" name="email" type ="email" value="email" id="mail" >
+<label for="pass">Mot de passe</label>
 <input type ="password" name="password" value ="password" id="pass" >
+<label for="date"> Date de Naissance</label>
 <input type ="date" name="date" value ="date" id="date" >
+<label for="pays">Pays</label>
 <input type ="pays" name="pays" value ="pays" id="pays" >
 <input class="headers_button" type ="submit" value="register">
 </form>
